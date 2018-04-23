@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Daniel Autry | Web Developer</title>
+	<link rel='stylesheet' href='main.css' type='text/css' />
+	<link href="https://fonts.googleapis.com/css?family=Barrio|Fredericka+the+Great|Megrim|Lato:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300|PT+Serif:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kaushan+Script|Nothing+You+Could+Do|Open+Sans|Shadows+Into+Light" rel="stylesheet">
+      
+      <link rel="shortcut icon" href="http://www.danielautry.com/favicon.ico?v=2" />
+	<link rel="stylesheet" type="text/css" href="http://www.example.com/main.css?ts=<?=time()?>&quot;"/>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98825453-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+
+        Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+            typeSpeed: 30,
+            backDelay: 1200,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to null for infinite loop
+            loopCount: null,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        var resetElement = document.querySelector('.reset');
+        if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed')._typed.reset();
+            });
+        }
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+    
+    <style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+    
+</head>
+
+<body class="">
+
+	<div class="top"> 
+		
+		<div class="top-color">
+		<div class="top-all">
+
+			<div class="fullscreen-bg">
+		   	 	<video loop muted autoplay poster="images/grey.jpg" class="fullscreen-bg__video">
+		       		<source src="videos/movie.mp4" type="video/mp4">
+			    	
+		    	</video>
+			</div>
+			
+			<div class="nav">
+				
+				<ul>
+					<li onclick="scrollToServices()">SERVICES</li>
+					<a class="resume-link" href="resume.pdf" target="_blank"><li>RESUME</li></a>
+					<li onclick="scrollToPortfolio()">PORTFOLIO</li>
+					<span class="nav-line"></span>
+				</ul>
+				<div class="top-contact" onclick="scrollToContact()">
+					<h3>HIRE ME!</h3>
+				</div>
+			</div>
+
+			<div class="title-box">
+				<div class="line"></div>
+				<div class="line2"></div>
+				<span class="penrose"><img src="images/penrose3.png"/></span><h1>D A</h1>
+			</div>
+
+			<div class="type-wrap">
+			Hi! I'm
+	            <div id="typed-strings">
+	                <p><span class="typed-red">Daniel.</span></p>
+	                <p>a <span class="typed-red">web designer.</span></p>
+	                <p>a <span class="typed-red">freelancer.</span></p>
+	                <p>a <span class="typed-red">developer.</span></p>
+	                <p>a <span class="typed-red">student.</span></p>
+	                <p>a <span class="typed-red">poet.</span></p>
+	                <p><span class="typed-red">Daniel.</span></p> 
+	           </div>
+            	<span id="typed" style="white-space:pre;"></span>
+       		</div>
+
+			<div class="top-description" id="dan">
+				<h2>
+					Designer <span class="top-descript-padding"> //</span>  Developer  <span class="top-descript-padding"> // </span> Student 
+				</h2>
+			</div>
+
+			<div class="top-button" onclick="scrollToAbout()">
+				<img src="images/arrow1.png" class="arrow"/>
+			</div>
+
+		</div>
+		</div>
+
+	</div>
+
+	<div class="skewX">
+		<div class="background-skew">
+		</div>
+	</div>
+	
+	<div class="about">
+		
+		<div class="about-all">
+			<div class="about-all-color">
+				<div class="about-title-box">
+					<div class="title-big">
+
+						<h1>ABOUT ME
+							<span class="l1"></span>
+		 					<span class="l20"></span>
+		 					<span class="l21"></span>
+		  					<span class="l3"></span>
+		 
+							<div class="line3"></div>
+							<div class="line4"></div>
+							<img src="images/me.png" class="about-title-pic"/>
+						</h1>
+					</div>
+			</div>
+
+			<div class="about-container-two">
+
+				<div class="picture">
+					<div class="about-pic">
+						<div class="about-pic-overlay-color">
+							<div class="rect">
+							</div> 
+							<div class="image">
+								<img src="images/daniel1.jpg" class="daniel"/>
+							</div>
+							<div class="about-square">
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="text-container">
+
+				<div class="about-text">
+
+					<div class="about-boxes">
+						<span class="a-l1"></span>
+	 					<span class="a-l2"></span>
+	  					<span class="a-l3"></span>
+							<h3 class="intro"> Hi, I'm <span class="about-red">Daniel</span> and I <span class="about-red"></span> build<span class="about-red"> nice websites.</span> </h3>
+					</div>
+
+						<p> 
+							
+							<span class="text-top">
+								Simply put, <span class="about-red">I love design</span>. I have a passion for creating <span class="about-red">detailed websites</span> that feel <span class="about-red">young, fresh, and inviting</span> to users.
+							</span> 
+
+							<br><br>
+
+							<span class="about-red">My journey started in Dallas, Texas</span>, and these past years have been incredible. From performing slam poetry in front of hundreds, to studying as a college junior, my experiences have taught me to be <span class="about-red">open and adjustable</span> to change and new perspectives.
+											
+							As I dove into freelance web development last year, I began to learn much more about good design practice. Gaining a <span class="about-red">personal understanding of clients</span> taught me a ton about user experience as a whole, and I seek to apply this in each design I put in place.
+							<br><br>			
+							A bit about myself; I am studying computer science and psychology at the University of Virginia. I find mental health fascinating, and enjoy playing basketball. Always down to collaborate if I have the time. Reach out to me if you need any work done!
+
+							<br><br>
+								
+						</p>
+
+						<div class="about-resume" onclick="scrollToContact()">
+						<h3 class="resume">CONTACT</h3>
+						</div>	
+
+						
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="skewX1">
+		<div class="background-skew">
+		</div>
+	</div> -->
+
+	<div class="services">
+		<div class="services-all">
+
+		<div class="about-title-box-s">
+			<div class="s-title-big">
+
+				<h1>SERVICES
+					<span class="s-l1"></span>
+ 					<span class="s-l20"></span>
+ 					<span class="s-l21"></span>
+  					<span class="s-l3"></span>
+ 
+					<div class="s-line3"></div>
+					<div class="s-line4"></div>
+					<img src="images/cog.png" class="services-title-pic"/>
+				</h1>
+				</div>
+
+			</div>
+
+		<div class="services-container">
+			
+			<div class="block1">
+					<div class="block-left1">
+						<div class="brackets-pic">
+							
+							<div class="outer"></div>
+							<img src="images/design1.png" class="brackets"/>
+
+						</div>
+					</div><div class="block-right1">
+						<div class="p1">
+							<h1 class="services-title1">
+								Visual <span class="about-red">Design</span>
+							</h1>
+							
+							<p>
+							
+								A <span class="about-red">quality design</span> conveys a <span class="about-red">quality brand</span>. Because your website will be the first impression a visitor will have of you, the design of your site is crucial to letting clients and potential partners feel positive and optimistic when learning about you. 
+								<br><br>
+								Many websites do a poor job of achieving good design due to misrepresentation of brand identity. Understanding the <span class="about-red">meaning and emotion</span> behind your mission is vital to letting your <span class="about-red">visitors feel the same way as you do</span>. Visual design communicates this in a variety of ways, and I am committed to getting to know you to help achieve this.
+
+							</p>
+								<hr>
+								<div class="block1-outer1">
+								</div>
+								<div class="block1-outer2">
+								</div>
+								
+						</div>
+					</div>
+				</div>
+
+			<div class="block2">
+					<div class="block-left2">
+						<div class="p2">
+							<h1 class="services-title2">
+								<span class="about-red">Front-End</span> Developer
+							</h1>
+								
+								<p>
+									<a href="https://blog.hubspot.com/marketing/chartbeat-website-engagement-data-nj#sm.00019rdixxk36djmugj27dfg5vc6d" target="_blank" class="blue-link"><span class="blue">Studies show</span></a> that most website visitors will leave your site after a minute, while some are gone in as <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" class="blue-link"><span class="blue">little as 15 seconds</span></a>. This means you only have a few precious moments to gain visitors’ <span class="about-red">undivided attention, pitch yourself, and stand out from opposing sites</span>. 
+							<br><br>
+									I am passionate about helping you arrive at a solution to this task, implementing my array of technical abilities to ensure that <span class="about-red">clear messages, proper usability, and call-to-actions</span> are conveyed in the best manner possible. From the ground-up, I aim to develop a user experience that delivers high conversion rates, repeat visits, and a <span class="about-red">growing reputation</span>. 
+								</p>
+									<hr>
+									<div class="block2-outer1">
+									</div>
+									<div class="block2-outer2">
+									</div>
+							</div>
+					</div><div class="block-right2">
+						<div class="phone-pic">
+							<div class="outer3"></div>
+							<img src="images/code1.png" class="phone"/>
+						</div>
+					</div>
+				</div>
+
+			<div class="block3">
+				<div class="block3-outer1">
+									</div>
+									<div class="block3-outer2">
+									</div>
+					<div class="block-left3">	
+						<div class="cloud-pic">
+							<div class="outer5"></div>
+							<img src="images/cloud.png" class="brackets"/>
+						</div>
+					</div><div class="block-right3">
+					<div class="p3">
+							<h1 class="services-title3">
+								<span class="about-red">Content</span> Management
+							</h1>
+							<p>
+								Once your site is up on the web, you will likely need to update content on the fly. Rather than sift through bunches of code, developing sites through Wordpress gives you freedom to <span class="about-red">update as you please.</span>
+							<br><br>
+								Wordpress is a powerful content management system that powers nearly half of all websites worldwide. It comes with the benefit of being <span class="about-red">user friendly and easy to use</span>, limiting your amount of work and making the overall process much smoother. Additionally, if you forget to include certain information or wish to add more pages to your site, I am available for site maintenance to ensure your website is consistently growing with your business.
+
+							</p>
+							<hr>
+									
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+	</div>
+
+	<div class="experience">
+		<div class="experience-whole">
+		<div class="about-title-box-e">
+			<div class="e-title-big">
+					<h1>
+						EXPERIENCE
+						<span class="e-l1"></span>
+ 						<span class="e-l20"></span>
+ 						<span class="e-l21"></span>
+  						<span class="e-l3"></span>
+ 
+						<div class="e-line3"></div>
+						<div class="e-line4"></div>
+						<img src="images/work.png" class="experience-title-pic"/>
+					</h1>
+				</div>
+			</div>
+		<div class="experience-inner">
+			<div class="experience-all">
+				<div class="timeline-all goldman">
+					<div class="experience-outer1">
+				</div>
+					<div class="timeline-box" >
+						<div class="timeline-pic">
+							<img src="images/goldman.png"/>
+						</div>
+					</div>
+
+					<div class="timeline-line">	
+					</div>	
+
+					<div class="timeline-text">
+							<h4>Incoming Technical Analyst<br>
+							 <span class="position">Goldman Sachs </span><span class="date">| Summer 2017</span>
+							</h4>
+							<p>
+							Starting in May, I will be interning at Goldman Sachs for the summer of 2017. I will be working as an analyst in their Technology Division located in Jersey City, NJ.
+							</p>
+						</div>
+				</div><div class="timeline-all bonzon">
+							<div class="experience-outer3">
+						</div>
+					<div class="timeline-box">
+						<div class="timeline-pic">
+							<img src="images/bonzon.jpg"/>
+						</div>
+					</div>
+
+					<div class="timeline-line">	
+					</div>	
+
+					<div class="timeline-text">
+							<h4>UX Intern<br>
+							 <span class="position">D'Bonzon Consulting</span><span class="date"> | Summer 2016</span>
+							</h4>
+							<p>
+							D'Bonzon Consulting is a UX consulting firm based in Dallas, TX. As an UX intern, I assessed over 20 different solutions to current UX problems over a broad range of industries. I also helped redesign the firm's website through competitive analysis and wireframe mockups.
+							</p>
+						</div>
+				</div><div class="timeline-all hack">
+						<div class="experience-outer2">
+						</div>
+					<div class="timeline-box">
+						<div class="timeline-pic">
+							<img src="images/hackcville.png"/>
+						</div>
+					</div>
+
+					<div class="timeline-line">	
+					</div>	
+
+					<div class="timeline-text">
+							<h4>Web Design Instructor<br>
+							 <span class="position">HackCville </span><span class="date"> | Spring 2017 - Current </span>
+							</h4>
+							<p>
+							HackCville is the ultimate clubhouse for people to create, learn, and connect over creative and entrepreneurial passions. This club has been an awesome support for me in my personal growth, and has given me two incredible mentors who constantly push me to learn more.
+							</p>
+						</div>
+				</div><div class="timeline-all uva">
+							<div class="experience-outer4">
+						</div>
+					<div class="timeline-box ">
+						<div class="timeline-pic">
+							<img src="images/uva.png"/>
+						</div>
+					</div>
+
+					<div class="timeline-line">	
+					</div>	
+
+					<div class="timeline-text">
+							<h4>B.A. Computer Science<br>
+							 <span class="position"> University of Virginia </span> <span class="date"> | 2014 - 2018 </span>
+							</h4>
+							<p>
+							I am currently in my 3rd year at the University of Virginia, majoring in computer science with a minor in psychology. After graduation, I hope to pursue a career in web development or community improvement in developing countries. 
+							</p>
+						</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="abilities">
+		<div class="abilities-all">
+		<div class="abilities-title-box">
+			<div class="a-title-big">
+				<h1>
+					<span class="ab-l1"></span>
+ 						<span class="ab-l20"></span>
+ 						<span class="ab-l21"></span>
+  						<span class="ab-l3"></span>
+ 
+						<div class="ab-line3"></div>
+						<div class="ab-line4"></div>
+						<img src="images/lightbulb.png" class="abilities-title-pic"/>
+					ABILITIES
+				</h1>
+			</div>
+		</div>
+		<div class="abilities-inner">
+
+			<div class="abilities-text">
+				<span class="ab-t-l1"></span>
+				<span class="ab-t-l2"></span>
+				<span class="ab-t-l3"></span>
+				<span class="ab-t-l4"></span>
+				<!-- <h3> Lorem ipsum dolor <span class="about-red"> sit amet</span></h3> -->
+				<p class="abilities-p">It's tough to keep up with the lastest design trends in this day in age. After fully diving into web development, I looked for ways to <span class="about-red">further hone my abilities</span> to keep producing the best <span class="about-red">possible solutions for clients</span>. 
+
+				<br><br>
+				I have been able to get a pretty good grip for both the <span class="about-red">technical and design side</span> of web development, but do look for ways to tackle problems from different angles. Feel free to reach out to me about any of the skills listed below!
+
+				</p>
+					<hr class="abilities-hr">
+
+			</div>
+
+			<div class="skillbars">
+					<ul class="columns-all">
+						<div class="columns-bar">
+							<li>
+								<span class="skill htmll"></span>
+								<span class="title">
+									<span class="ht">HTML</span>
+								</span>
+								<span class="title-hidden">
+									HTML
+								</span>
+							</li>
+						</div><div class="columns-bar">
+							<li>
+								<span class="skill" id="cs"></span>
+								<span class="title">CSS</span>
+								<span class="title-hidden">
+									CSS
+								</span>
+							</li>
+						</div><div class="columns-bar">
+							<li>
+								<span class="skill js"></span>
+								<span class="title">JS</span>
+								<span class="title-hidden">
+								 	JS
+								</span>
+							</li>
+						</div><div class="columns-bar">
+							<li>
+								<span class="skill sp"></span>
+								<span class="title">SS</span>
+								<span class="title-hidden">
+									SS
+								</span>
+							</li>
+						</div><div class="columns-bar">
+							<li>
+								<span class="skill wp"></span>
+								<span class="title">WP</span>
+								<span class="title-hidden">
+									WP
+								</span>
+							</li>
+						</div>
+					</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="freelance">
+		<div class="freelance-all">
+			<div class="heading">
+					<span class="h-l1"></span>
+		 			<span class="h-l20"></span>
+		 			<span class="h-l21"></span>
+		  			<span class="h-l3"></span>
+		  			<span class="h-l40"></span>
+		  			<span class="h-l41"></span>
+				<div class="freelance-title-box">
+					<div class="f-title-big">
+						<h1>PORTFOLIO
+							<span class="f-l1"></span>
+		 					<span class="f-l20"></span>
+		 					<span class="f-l21"></span>
+		  					<span class="f-l3"></span>
+		 
+							<div class="f-line3"></div>
+							<div class="f-line4"></div>
+							<img src="images/folder3.png" class="freelance-title-pic"/>
+						</h1>
+					</div>
+
+				</div>
+
+				<div class="freelance-text">
+						<p>
+							Head over to my Github to see my latest works and web designs!
+						</p>
+					</div>
+
+				<div class="git">
+				<a href="https://github.com/danielautry" target="_blank"><h3 class="checkout">Checkout my github</h3></a> 
+				</div>
+			</div>
+			</div>
+		</div>
+
+	<div class="contact">
+
+	<div class="contact-all">
+		
+		<div class="form">
+			<div class="form-title-box">
+					<div class="form-title-big">
+						<h1>CONTACT
+							<span class="c-l1"></span>
+		 					<span class="c-l20"></span>
+		 					<span class="c-l21"></span>
+		  					<span class="c-l3"></span>
+		 
+							<div class="c-line3"></div>
+							<div class="c-line4"></div>
+							<img src="images/mail.png" class="contact-title-pic"/>
+						</h1>
+					</div>
+
+				</div>
+
+				<div class="form_wrapper">
+	<!-- 			<form class="contact_form" name="contact_form" method="post" action="send_form_email.php"> -->
+				<form class="contact_form" name="contact_form" method="post" action="send_form_email.php" class="form-all">
+					<div class="form_errors"></div>
+						<!-- <div class="name">Name</div> -->
+						<!-- <br> -->
+		  					
+		  				<div class="contact-s-all">
+		  					<div class="a-i">
+		  					<input type="text" name="name" class="name-input" placeholder="Name"><br class="br1"><br>
+		  					</div>
+			  			<div class="contact_section e-i">
+				  			<!-- <div class="email">Email</div> -->
+				  				<input class="first_input" type="text" name="email" placeholder="Email"><br><br class="br-hide">
+				  			</div><div class="contact_section p-i">
+			  					<!-- <div class="phone">Phone</div> -->
+			  					<input type="text" name="phone" class="phone-input" placeholder="Phone"><br class="br">
+		  				</div><br class="br">
+		  				</div>
+		  			<!-- <div class="message">Message</div> -->
+		  			<br class="br">
+		  			<textarea name="message" class="message-box" placeholder="What can I help you with?"></textarea><br class="br">
+		  			<input type="submit" value="Submit">
+
+		  			</form>
+				
+			</div>
+
+
+			</div>
+				<div class="message-sent">
+						<div class="message-all"><h2 class="message-title">Message Sent!</h2>
+						<div class="message-pic"><img src="images/sent-mail.png" class="sent"/></div>
+						<div class="response">Thanks for reaching out!<br>Check for a response from me within the next few days, or find me on social media! 
+						</div>
+						<hr class="message-hr">
+							<div class="social-media">
+							<a href="https://www.facebook.com/realdanielautry" target="_blank" class="sent-social">
+								<img src="images/fb.png" class="fb"/>
+							</a>
+							<a href="https://www.linkedin.com/in/daniel-autry-50b252116/" target="_blank"
+							class="sent-social">
+								<img src="images/in.png" class="in"/>
+							</a>
+							<a href="https://twitter.com/realdanielautry" target="_blank" class="sent-social">
+								<img src="images/tweet.png" class="tweet"/>
+							</a>
+							<a href="https://www.instagram.com/danielautry/?hl=en" target="_blank" class="sent-social">
+								<img src="images/insta.png" class="insta"/>
+							</a>
+							</div>
+						
+						</div>
+					</div>
+
+					<div class="copyright">
+					Copyright © Daniel Autry. 2017 All Rights Reserved.
+					</div>
+		  			
+		</div>
+	</div>
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="typed.js" type="text/javascript"></script>
+	<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
+
+	
+
+		
